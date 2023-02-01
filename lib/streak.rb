@@ -8,6 +8,7 @@ require "streak/util"
 
 require "streak/streak_object"
 require "streak/box"
+require "streak/contact"
 require "streak/field"
 require "streak/field_value"
 require "streak/pipeline"
