@@ -30,7 +30,8 @@ module Streak
   end
 
   def self.api_url(url='')
-    @api_base + "/#{@version}" + url
+    # Allow version override
+    @api_base + ((url =~ /^\/v\d\//).nil? ? "/#{@version}" : "") + url
   end
 
   def self.request(method, url, params = {}, headers = {})
